@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de funcionario</title>
+  <link rel="stylesheet" type="text/css" href="css/stilo.css">
+</head>
+
+<body>
+  <div>
+    <h1 id="titulo">CADASTRO DE FUNCIONARIO</h1>
+    <p id="subtitulo"><strong>INSIRA AS INFORMAÇÕES DO FUNCIONÁRIO</strong> </p>
+  </div>
+  <form action="/add" method="POST">
+    <fieldset class="cadastro">
+      <div class="campo">
+        <label for="name"><strong>Nome:</strong></label>
+        <input type="text" name="nome" placeholder="Digite o nome" required>
+      </div>
+      <div class="campo">
+        <label for="cpf"><strong>CPF:</strong></label>
+        <input type="number" name="cpf" placeholder="Digite o CPF" required>
+      </div>
+      <div class="campo">
+        <label for="telefone"><strong>Telefone:</strong></label>
+        <input type="number" name="telefone" placeholder="Digite o telefone" required>
+      </div>
+      <div class="campo">
+        <label for="foto"><strong>Foto:</strong></label>
+        <input type="file" name="foto" accept="image/*">
+      </div>
+      <button type=" submit" class="botao">Registrar</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>

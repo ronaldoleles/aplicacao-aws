@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TELA DE LOGIN</title>
+  <link rel="stylesheet" type="text/css" href="css/stilo.css">
+</head>
+
+<body>
+  <div>
+    <h1 id="titulo">RENALDO LELES - CONSTRUTORA </h1>
+    <p id="subtitulo"><strong>FAÇA LOGIN</strong> </p>
+  </div>
+  <form action="/login" method="POST">
+    <fieldset class="login">
+      <div class="campo">
+        <label for="login"><strong>Login:</strong></label>
+        <input type="text" name="login" placeholder="Digite o usuario" required>
+      </div>
+      <div class="campo">
+        <label for="senha"><strong>Senha:</strong></label>
+        <input type="password" name="senha" placeholder="Digite a senha" required>
+      </div>
+      <button type=" submit" class="botao">Logar</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
